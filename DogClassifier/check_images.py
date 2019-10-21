@@ -39,7 +39,6 @@ def main():
     # TODO: 2. Define get_input_args() function to create & retrieve command
     # line arguments
     in_arg = get_input_args()
-    print(in_arg.arch)
     
     # TODO: 3. Define get_pet_labels() function to create pet image labels by
     # creating a dictionary with key=filename and value=file label to be used
@@ -118,9 +117,31 @@ def get_pet_labels():
      petlabels_dic - Dictionary storing image filename (as key) and Pet Image
                      Labels (as value)  
     """
-    pass
-
-
+    image_dir = listdir("pet_images/")
+    petlabels_dic = dict()
+    
+    #manuplate dog labels
+    for key in range(0, len(image_dir), 1):
+        filename_array = image_dir[key].split("_")
+               
+        dog_label = ""
+        
+        #loop through filenames arrays, remove, non alpha strings       
+        for item in filename_array:
+            if item.isalpha():
+                dog_label += item.lower() + " "   
+                
+        dog_label = dog_label.strip()
+        
+        if image_dir[key] in petlabels_dic:
+            print("Oops {} already exists".format(image_dir[key]))
+            
+        petlabels_dic[image_dir[key]] = dog_label.lower()
+        
+    print(petlabels_dic)
+    
+    return petlabels_dic
+        
 def classify_images():
     """
     Creates classifier labels with classifier function, compares labels, and 

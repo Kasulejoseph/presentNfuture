@@ -1,0 +1,19 @@
+*** summary for CNN model Architecture RESNET ***
+N images: 40 
+ N dog images: 30 
+ N not dogs: 10 
+ 
+pct_correctly_classified_dogs: 100.0
+pct_correctly_classified_bleeds: 90.0
+pct_label_matches: 82.5
+pct_correctly_classified_non_dogs: 90.0
+*
+ incorrect dOG/not DOG Assigments: *
+Real: cat classifier: norwegian elkhound, elkhound
+
+ * missclasfied bleeds *
+Real: beagle classifiers: walker hound, walker foxhound
+Real: golden retriever classifiers: leonberg
+Real: great pyrenees classifiers: kuvasz
+
+** Total Elapsed Runtime: 6.7956459522247314

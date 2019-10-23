@@ -5,6 +5,8 @@ install dependencies: `conda install -n yourenvname [package]`
 Run bash script to test the model on the 3 CNN model archictecture
 Run bash:  `sh run_models_batch.sh`
 
+export environmet: `conda env export > environment.yaml`
+Create environment from .yaml: `conda env export -f environment.yaml`
 
 ## Principle Objectives
 Below you will find the principle objectives, a summary of the results, and discussion as to how `check_images.py` achieved these four objectives.

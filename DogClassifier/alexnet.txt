@@ -1,0 +1,19 @@
+*** summary for CNN model Architecture ALEXNET ***
+N images: 40 
+ N dog images: 30 
+ N not dogs: 10 
+ 
+pct_correctly_classified_dogs: 100.0
+pct_correctly_classified_bleeds: 80.0
+pct_label_matches: 75.0
+pct_correctly_classified_non_dogs: 100.0
+
+ * missclasfied bleeds *
+Real: beagle classifiers: walker hound, walker foxhound
+Real: boston terrier classifiers: basenji
+Real: beagle classifiers: english foxhound
+Real: golden retriever classifiers: tibetan mastiff
+Real: great pyrenees classifiers: kuvasz
+Real: golden retriever classifiers: afghan hound, afghan
+
+** Total Elapsed Runtime: 2.771740198135376
